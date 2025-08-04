@@ -2,6 +2,13 @@ body {
     margin: 0;
 }
 
+
+/* header-nav style */
+
+/* Note from Fariha: "I've just done a basic style to get started, this is not the final version and is not designed for mobile first yet" */
+
+/* Note2 from Fariha: The mobile screen would need less items on the header nav and a hamburger menu. If someone already knows how to do that, have at it. Otherwise, I'll figure it out */
+
 .header-nav .container {
     display: flex;
     justify-content: space-between;
