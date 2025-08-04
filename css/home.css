@@ -1,0 +1,12 @@
+
+
+.hero-banner {
+    background-image: url("../images/hero-banner.jpg");
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
