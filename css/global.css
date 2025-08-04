@@ -18,6 +18,10 @@ body {
     gap: 2rem;
 }
 
+.header-nav__menu a {
+    text-decoration: none;
+}
+
 .header-nav__icons {
     display: flex;
     gap: 1rem;
