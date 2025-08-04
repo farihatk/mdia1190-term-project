@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+.header-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    
+}
+
+.header-nav__menu ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.header-nav__icons {
+    padding-right: 3rem;
+}
