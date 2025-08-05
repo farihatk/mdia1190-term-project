@@ -7,10 +7,12 @@
 
 /* Note2 from Fariha: The mobile screen would need less items on the header nav and a hamburger menu. If someone already knows how to do that, have at it. Otherwise, I'll figure it out */
 
-.header-nav .container {
+.header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 1rem;
+    background-color: white;
 }
 
 .header-nav__menu ul {
@@ -25,12 +27,4 @@
 
 .container {
     margin: 2rem;
-}
-
-.fa-solid.fa-magnifying-glass {
-    display: none !important;
-}
-
-.fa-regular.fa-heart {
-    display: none !important;
 }
