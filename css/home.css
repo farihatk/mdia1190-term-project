@@ -40,3 +40,18 @@
     aspect-ratio: 1/1;
     object-fit: cover;
 }
+
+.about {
+    display: grid;
+    grid-template-columns: 12, 1fr;
+}
+
+.about-image {
+    grid-column: auto / span 6;
+}
+
+.about-image img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
