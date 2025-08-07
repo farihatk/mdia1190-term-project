@@ -1,0 +1,30 @@
+
+
+
+/* header-nav style */
+
+/* Note from Fariha: "I've just done a basic style to get started, this is not the final version*/
+
+/* Note2 from Fariha: The mobile screen would need less items on the header nav and a hamburger menu. If someone already knows how to do that, have at it. Otherwise, I'll figure it out */
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    background-color: white;
+}
+
+.header-nav__menu ul {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+.header-nav__menu a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 2rem;
+}
