@@ -1,9 +1,18 @@
+:root {
+    --orange: #EEB17D;
+    --green: #A8B7AB;
+}
+
+
 
 .container {
     max-width: 80rem;
     margin: 0 auto;
     padding: 0 1rem;
 }
+
+
+/* Hero-banner section */
 
 .hero-banner {
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/hero-banner.jpg");
@@ -19,6 +28,9 @@
     top: 5rem;
     left: 1.5rem;
 }
+
+
+/* Featured Products Section */
 
 .featured-content {
     display: grid;
@@ -36,14 +48,23 @@
     grid-column: auto/span 6;
 }
 
+/* I dont understand this part */
+.featured-content__card:nth-child(2) {
+    grid-column: auto / span 12;
+}
+
 .featured-content__card img {
     aspect-ratio: 1/1;
     object-fit: cover;
 }
 
-.about {
+
+/* About and Custom Product Section */
+
+.about-customprod {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    margin-top: 4rem;
 }
 
 .about-image {
@@ -54,4 +75,25 @@
     aspect-ratio: 1/1;
     object-fit: cover;
 }
+
+.about-text {
+    grid-column: auto / span 6;
+    background-color: var(--green);
+}
+
+.customprod-text {
+    grid-column: auto / span 6;
+    background-color: var(--orange);
+}
+
+.customprod-image {
+    grid-column: auto / span 6
+}
+
+.customprod-image img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+
 
