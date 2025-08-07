@@ -22,7 +22,7 @@
 
 .featured-content {
     display: grid;
-    grid-template-columns: 12, 1fr;
+    grid-template-columns: repeat(12, 1fr);
     gap: 0.5rem;
 
 }
@@ -43,7 +43,7 @@
 
 .about {
     display: grid;
-    grid-template-columns: 12, 1fr;
+    grid-template-columns: repeat(12, 1fr);
 }
 
 .about-image {
