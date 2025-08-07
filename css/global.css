@@ -7,6 +7,56 @@
 
 /* Note2 from Fariha: The mobile screen would need less items on the header nav and a hamburger menu. If someone already knows how to do that, have at it. Otherwise, I'll figure it out */
 
+:root {
+    --sans-serif: 'Open Sans', sans-serif;
+    --gap: 1rem;
+    --bold: 700;
+    --semi-bold: 700;
+}
+
+.container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap);
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* Header */
+.site-header {
+    padding: 1rem 0;
+}
+
+.site-header div.flex {
+    align-items: center;
+}
+
+.site-header__logo img {
+    width: 3.125rem;
+}
+
+.site-header__menu {
+    flex-grow: 1;       
+}
+
+.site-header__menu ul {
+    justify-content: end;
+}
+
+.site-header__menu a {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: var(--bold);
+}
+
+/* header-nav style 
 .header-nav {
     display: flex;
     justify-content: space-between;
@@ -23,4 +73,4 @@
 
 .header-nav__menu a {
     text-decoration: none;
-}
+}*/
