@@ -95,5 +95,10 @@
     object-fit: cover;
 }
 
+.gallery-container {
+    padding: 1rem;
+    column-count: 3;
+}
+
 
 
