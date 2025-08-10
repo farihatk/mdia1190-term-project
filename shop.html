@@ -1,76 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop | Noko</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-     <link rel="stylesheet" href="css/global.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noko - Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-orange-100 font-dm-sans">
-    <!-- Header -->
-     <header class="site-header">
-        <div class="container">
-            <div class="flex">
-                <div class="site-header__logo">
-                    <a href="index.html">
-                        <img src="images/Noko.svg"  alt="Noko Log" srcset="">
-                    </a>
-                </div>
-                <nav class="site-header__menu">
-                    <ul class="flex">
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    
-    
-    <header class="bg-white border-b border-neutral-600">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-            <a href="#"><img src="images/Noko.svg" width="48" alt="Noko Logo"></a>
-            <nav class="absolute top-0 right-0 w-72 h-screen translate-x-full transition-all lg:relative lg:bg-opacity-0 lg:h-auto lg:w-auto lg:translate-x-0 z-50 js-menu">
-                <a href="#" class="js-menu-close absolute p-2 top-0 right-0 lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6 text-white ">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </a>
-                <ul class="text-white lg:text-neutral-800 lg:flex">
-                    <li class="py-2 px-4 border-b lg:border-0">Shop</li>
-                    <li class="py-2 px-4 border-b lg:border-0">About</li>
-                    <li class="py-2 px-4 border-b lg:border-0">Contact</li>
-                </ul>
-            </nav>
-            <a href="#" class="js-menu-open lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                    stroke="currentColor" class="w-10 h-10 text-neutral-800">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
+<body>
+<!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="flex">
+          <div class="site-header__logo">
+            <a href="index.html">
+              <img src="images/Noko.svg"  alt="Noko Log" srcset="">
             </a>
-        </div>
-    </header>
+          </div>
+          <nav class="site-header__menu">
+            <ul class="flex">
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+      </div>
+    </div>
+  </header>
+    
         
-        <!-- Filter Bar -->
-        <div class="bg-white py-4 px-4 border-b border-neutral-300">
-            <div class="max-w-7xl mx-auto flex space-x-6 text-neutral-700 font-medium">
+    <!-- Filter Bar -->
+    <div class="bg-white py-4 px-4 border-b border-t border-neutral-600">
+        <div class="max-w-7xl mx-auto flex space-x-6 text-neutral-700 font-medium">
             <button class="hover:underline after:font-semibold">All</button>
             <button class="hover:underline after:font-semibold">Dinnerware</button>
             <button class="hover:underline after:font-semibold">Ceramic</button>
             <button class="hover:underline after:font-semibold">Decor Art</button>
-            </div>
         </div>
+    </div>
+
 
   <!-- Product Grid -->
-<main class="max-w-7xl mx-auto px-8 py-12 font-sans">
+   <!---For main content I made maximum width for content 7xl breakpoint and centered the elements horizontally with mx-auto. Px and py add padding around the x and y axis --->
+<main class="max-w-7xl mx-auto px-8 py-12">
+
+    <!---I create a grid for this section. For mobile first design, it's default is one column. Then on small screens it's two columns and for medium to large it's three co;column grids.--->
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-20">
-    
+
     <!-- Product Block -->
     <div class="flex flex-col">
       <img src="images/blue_white_mug+spoon.jpg" alt="Product Image" class="rounded-xl object-cover aspect-square w-full mb-4 border border-neutral-600">
@@ -166,7 +146,7 @@
     
 
 
-  </main>
+</main>
 
 
         
