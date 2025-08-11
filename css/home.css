@@ -12,6 +12,9 @@
     width: 100%;
 }
 
+h3 { font-size: 1.5rem;}
+h4 {font-size: 1.25rem;}
+
 
 /* Hero-banner section */
 
@@ -30,6 +33,31 @@
     left: 1.5rem;
 }
 
+.hero-banner__text h2 {
+    font-family: "Chicle", "DM Sans", sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.25rem;
+    color: whitesmoke;
+}
+
+.hero-banner__text p {
+    color: white;
+    font-size: 
+}
+
+.hero-banner__text-btn {
+    background-color: var(--green);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    margin-top: 0.5rem;
+}
+
+.hero-banner__text-btn a {
+    text-decoration: none;
+    color: white;
+}
+
 
 /* Featured Products Section */
 
@@ -41,9 +69,10 @@
 
 }
 
-.featured-content h2 {
+.featured-content h3 {
     text-align: center;
     grid-column: auto/span 12;
+    margin-top: 1rem;
 }
 
 .featured-content__card {
@@ -82,13 +111,17 @@
 .about-text {
     grid-column: auto / span 12;
     background-color: var(--green);
-    padding: 1rem 1rem;
+    padding: 1.75rem 1.75rem;
+    aspect-ratio: 1/1;
 }
 
 .customprod-text {
     grid-column: auto / span 12;
     background-color: var(--orange);
-    padding: 1rem 1rem;
+    padding-top: 4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    aspect-ratio: 1/1;
 }
 
 .customprod-image {
@@ -98,6 +131,12 @@
 .customprod-image img {
     aspect-ratio: 1/1;
     object-fit: cover;
+}
+
+.prod-gallery h3 {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.5rem;
 }
 
 .gallery-container {
