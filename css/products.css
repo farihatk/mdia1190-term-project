@@ -1,0 +1,75 @@
+:root {
+    --orange: #EEB17D;
+    --green: #A8B7AB;
+    --yellow-orange: #ffedd5;
+    --soft-yellow: #F6E27F;
+    --deep-brown: #251605;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--yellow-orange);
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Hero-banner section */
+
+.hero-banner {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/hero-banner.jpg");
+    aspect-ratio: 4/3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.hero-banner__text {
+    position: absolute;
+    top: 5rem;
+    left: 1.5rem;
+}
+
+/* Hero-banner section */
+
+.product-header_main {
+    animation: fadeSlideUp 0.6s ease forwards;
+    position: relative;
+}
+
+
+/* Product Banner Animation */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Button */
+
+.btn-soft-yellow {
+    background-color: var(--soft-yellow);
+    color: var(--deep-brown);
+    border: 2px solid var(--deep-brown);
+    border-radius: 9999px; /* makes it a pill */
+    padding: 0.5rem 1rem;  /* roughly px-4 py-2 */
+    font-weight: 600;     /* semi-bold */
+    font-size: 0.875rem;  /* text-sm */
+    cursor: pointer;      /* nice pointer on hover */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-soft-yellow:hover {
+    background-color: var(--deep-brown);
+    color: var(--soft-yellow);
+    transform: scale(1.05); /* slight zoom on hover */
+}

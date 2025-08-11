@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noko - Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/products.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="flex">
+          <div class="site-header__logo">
+            <a href="index.html">
+              <img src="images/Noko.svg"  alt="Noko Logo" srcset="">
+            </a>
+          </div>
+          <nav class="site-header__menu">
+            <ul class="flex">
+              <li><a href="products.html">Products</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+      </div>
+    </div>
+  </header>
+    
+ <!-- Product Page Header -->
+    <section class="product-header_main">
+      <img src="images/custom-bowls.jpg" alt="Ceramic pottery assortment."
+         class="w-full object-cover max-h-[20rem]">
+         <!-- Text overlay with white background I added a css element here it was really hard to figure out but you can see "fade-in-up" is from the keyframes animation i did.-->
+        <div class="absolute left-0 top-0 z-10 h-full w-full flex items-center justify-center text-center fade-in-up">
+            <div class="bg-white px-6 py-4 rounded-lg shadow-lg">
+                <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl text-neutral-800 mb-2">Products</h1>
+            </div>
+        </div>
+    </section>
+        
+    <!-- Filter Bar -->
+    <div class="bg-white py-4 px-4 border-b border-t border-neutral-600">
+        <div class="max-w-7xl mx-auto flex space-x-6 text-neutral-700 font-medium">
+            <button class="hover:underline after:font-semibold">All</button>
+            <button class="hover:underline after:font-semibold">Dinnerware</button>
+            <button class="hover:underline after:font-semibold">Sets</button>
+            <button class="hover:underline after:font-semibold">Decor Art</button>
+        </div>
+    </div>
+
+
+  <!-- Product Grid -->
+
+
+   <!---For main content I made maximum width for content 7xl breakpoint and centered the elements horizontally with mx-auto. Px and py add padding around the x and y axis --->
+<main class="max-w-7xl mx-auto px-8 py-12">
+
+    <!---I create a grid for this section. For mobile first design, it's default is one column. Then on small screens it's two columns and for medium to large it's three co;column grids.--->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-20">
+
+
+
+    <!-- Product Block -->
+
+    <!--I've got each block in a flexbox that sits in a column that I made. Column details are in notes above.-->
+    <div class="flex flex-col">
+      
+      <!--Using Tailwindcss I've got made this image have rounded corners, it's filling the container without distortion (object-cover) the aspect ratio makes it square. To make sure they are all the same size on the viewport, I made w-full so they are all the same size square. The bottom margin needed to be a bit bigger so I added mb-4. The border is obvious for this one.-->
+        <img src="images/prod-beecup.jpg" alt="Cream colored mug with bees on it and yellow handle" class="rounded-xl object-cover aspect-square w-full mb-2 border border-neutral-600">
+
+      <!--Using Tailwindcss... the text is large, semibold, neutral-800 color and the bottom has a small margin on it. The font is connected to the default stylesheet so it's already DM Sans.-->
+      <h2 class="text-lg font-semibold text-neutral-800">Bee Mug</h2>
+      
+      <p class="text-sm text-neutral-600">It's cute. Save the bees.</p>
+
+      <p class="text-md font-extrabold text-neutral-800">$12.00</p>
+
+      <!--I was having a hard time with Tailwindcss for some reason so I gave up and used the stylesheet. I made the details under btn-soft-yellow. Probably good to use either Tailwindcss or a stylesheet, but here I am using both.-->
+      <button class="btn-soft-yellow">
+        View Product Details
+      </button>
+
+    </div>
+
+    <div class="flex flex-col">
+      <img src="images/prod-cactuspot.jpg" alt="Two cactus pots with smiley faces sit on a table with plants in them." class="rounded-xl object-cover aspect-square w-full mb-2 border border-neutral-600">
+
+      <h2 class="text-lg font-semibold text-neutral-800">Cactus Plant Pot Set</h2>
+
+      <p class="text-sm text-neutral-600">Why buy one when you have have two!</p>
+
+      <p class="text-md font-extrabold text-neutral-800">$25.00</p>
+
+      <button class="btn-soft-yellow">
+        View Product Details
+      </button>
+    </div>
+
+
+    <div class="flex flex-col">
+      <img src="images/prod-dumpling.jpg" alt="3 ceramic dumplings." class="rounded-xl object-cover aspect-square w-full mb-2 border border-neutral-600">
+
+      <h2 class="text-lg font-semibold text-neutral-800">Cute Dumpling- Handmade Pottery</h2>
+
+      <p class="text-sm text-neutral-600">Did somebody say Dim Sum?</p>
+
+      <p class="text-md font-extrabold text-neutral-800">$22.00</p>
+
+      <button class="btn-soft-yellow">
+        View Product Details
+      </button>
+    </div>
+
+
+    <div class="flex flex-col">
+      <img src="images/prod-cat-jewelleryholder.jpg" alt="An array of cat jewellery holder ceramic shallow bowls." class="rounded-xl object-cover aspect-square w-full mb-2 border border-neutral-600">
+
+      <h2 class="text-lg font-semibold text-neutral-800">Cat Jewellery Holder</h2>
+
+      <p class="text-sm text-neutral-600">Cats on guard.</p>
+
+      <p class="text-md font-extrabold text-neutral-800">$14.00</p>
+
+      <button class="btn-soft-yellow">
+        View Product Details
+      </button>
+    </div>
+
+    <div class="flex flex-col">
+      <img src="images/prod-catinacup.jpg" alt="A ceramic mug with a ceramic cat feature inside." class="rounded-xl object-cover aspect-square w-full mb-2 border border-neutral-600">
+
+      <h2 class="text-lg font-semibold text-neutral-800">Cat in a Mug</h2>
+
+      <p class="text-sm text-neutral-600">We love cats here.</p>
+
+      <p class="text-md font-extrabold text-neutral-800">$17.00</p>
+
+      <button class="btn-soft-yellow">
+        View Product Details
+      </button>
+    </div>
+
+   <div class="flex flex-col">
+      <img src="images/prod-catplate-black.jpg" alt="A ceramic plate with a cat and flowers." class="rounded-xl object-cover aspect-square w-full mb-2 border border-neutral-600">
+
+      <h2 class="text-lg font-semibold text-neutral-800">Cat Plate</h2>
+
+      <p class="text-sm text-neutral-600">Cats need a babushka sometimes, too.</p>
+
+      <p class="text-md font-extrabold text-neutral-800">$17.00</p>
+
+      <button class="btn-soft-yellow">
+        View Product Details
+      </button>
+    </div>
+
+   <div class="flex flex-col">
+      <img src="images/prod-duckcup.jpg" alt="A ceramicmug with a duck face on it." class="rounded-xl object-cover aspect-square w-full mb-2 border border-neutral-600">
+
+      <h2 class="text-lg font-semibold text-neutral-800">Duck Mug</h2>
+
+      <p class="text-sm text-neutral-600">Quack.</p>
+
+      <p class="text-md font-extrabold text-neutral-800">$17.00</p>
+
+      <button class="btn-soft-yellow">
+        View Product Details
+      </button>
+    </div>
+
+   <div class="flex flex-col">
+      <img src="images/prod-frog-jewelleryholder.jpg" alt="Jewellery dish shaped like a leaf with a mini frog in it." class="rounded-xl object-cover aspect-square w-full mb-2 border border-neutral-600">
+
+      <h2 class="text-lg font-semibold text-neutral-800">Frog Trinket Dish</h2>
+
+      <p class="text-sm text-neutral-600">Looks like a pacman leaf.</p>
+
+      <p class="text-md font-extrabold text-neutral-800">$18.00</p>
+
+      <button class="btn-soft-yellow">
+        View Product Details
+      </button>
+    </div>
+
+    <div class="flex flex-col">
+      <img src="images/prod-sunbowl.jpg" alt="Jewellery dish shaped like a leaf with a mini frog in it." class="rounded-xl object-cover aspect-square w-full mb-2 border border-neutral-600">
+
+      <h2 class="text-lg font-semibold text-neutral-800">Sunflower Bowl</h2>
+
+      <p class="text-sm text-neutral-600">Sunny cereal bowl.</p>
+
+      <p class="text-md font-extrabold text-neutral-800">$17.00</p>
+
+      <button class="btn-soft-yellow">
+        View Product Details
+      </button>
+    </div>
+
+    
+    
+
+
+</main>
+
+
+        
+ 
+    
+</body>
+</html>
