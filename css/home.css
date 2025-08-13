@@ -283,3 +283,14 @@ h4 {font-size: 1.25rem;}
     }
 }
 
+@media screen and (min-width: 1200px) {
+
+    .featured-content__card {
+        grid-column: auto / span 3;
+    }
+
+    .gallery-container {
+        column-count: 3;
+    }
+}
+
