@@ -71,7 +71,7 @@ h4 {font-size: 1.25rem;}
 .featured-content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 0.5rem;
+    gap: 1rem;
     justify-content: center;
 
 }
@@ -165,8 +165,8 @@ h4 {font-size: 1.25rem;}
 }
 
 .about-button a {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     display: inline-block;
     padding: 0.5rem 2rem;
     border-radius: 2rem;
@@ -184,6 +184,20 @@ h4 {font-size: 1.25rem;}
     align-items: center;
     text-align: center;
     padding: 1.75rem;
+}
+
+.customprod-button {
+    margin-top: 2rem;
+}
+
+.customprod-button a {
+    background-color: var(--soft-yellow);
+    color: black;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .customprod-image {
@@ -214,5 +228,20 @@ h4 {font-size: 1.25rem;}
     margin-bottom: 1rem;
     border: 1px solid black;
     border-radius: 0.75rem;
+}
+
+.gallery-button {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.gallery-button a {
+    background-color: var(--soft-yellow);
+    color: black;
+    display: inline-block;
+    padding: 0.5rem 4rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: 600;
 }
 
