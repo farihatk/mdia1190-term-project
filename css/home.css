@@ -2,6 +2,11 @@
     --orange: #EEB17D;
     --green: #A8B7AB;
     --yellow-orange: #ffedd5;
+    --soft-yellow: #F6E27F;
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 
@@ -26,7 +31,7 @@ h4 {font-size: 1.25rem;}
     background-position: center;
     display: flex;
     align-items: center;
-    padding-left: 3rem;
+    /* padding-left: 3rem; */
 }
 
 .hero-banner__text {
@@ -81,14 +86,37 @@ h4 {font-size: 1.25rem;}
     grid-column: auto/span 6;
 }
 
-/* I dont understand this part */
-/* .featured-content__card:nth-child(2) {
-    grid-column: auto / span 12;
-} */
+.featured-content__card h4 {
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.prod-summary {
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    color: #6E6E6E;
+}
+
+.prod-price {
+    font-weight: 800;
+    font-size: 1rem;
+    margin-top: 1rem; 
+}
 
 .featured-content__card img {
     aspect-ratio: 1/1;
     object-fit: cover;
+    border: 1px solid black;
+    border-radius: 0.75rem;
+    
+}
+
+.prod-page__btn {
+    color: black;
+    background: var(--soft-yellow);
+    display: inline-block;
+    text-align: center;
+    justify-self: center;
 }
 
 
@@ -146,6 +174,7 @@ h4 {font-size: 1.25rem;}
     object-fit: cover;
     width: 100%;
     height: 100%;
+    
 }
 
 .prod-gallery h3 {
@@ -162,135 +191,7 @@ h4 {font-size: 1.25rem;}
 .gallery-container img {
     width: 100%;
     margin-bottom: 1rem;
+    border: 1px solid black;
+    border-radius: 0.75rem;
 }
 
-@media screen and (min-width: 768px) {
-
-    .hero-banner__text h2 {
-        font-size: 10rem;
-    }
-
-    .hero-banner__text p {
-        font-size: 1.5rem;
-    }
-
-    .featured-content__card:nth-child(2) {
-    grid-column: auto / span 3;
-    }
-
-    .featured-content__card {
-    grid-column: auto/span 3;
-}
-
-    .about-customprod {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    margin-top: 4rem;
-    }
-
-    .about-image {
-        grid-column: auto / span 6;
-    }
-
-    .about-image img {
-        aspect-ratio: 1/1;
-        object-fit: cover;
-        width: 100%;
-    }
-
-    .about-text {
-        grid-column: auto / span 6;
-        background-color: var(--green);
-    }
-
-    .customprod-text {
-        grid-column: auto / span 6;
-        background-color: var(--orange);
-    }
-
-    .customprod-image {
-        grid-column: auto / span 6
-    }
-
-    .customprod-image img {
-        aspect-ratio: 1/1;
-        object-fit: cover;
-    }
-
-    .gallery-container {
-        padding: 1rem;
-        column-count: 3;
-    }
-
-    .gallery-container img {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    
-    .hero-banner {
-        aspect-ratio: 16/7;
-    }
-    
-    .hero-banner__text {
-    top: 4rem;
-    left: 3rem;
-    }
-
-
-    .hero-banner__text h2 {
-        font-size: 10rem;
-    }
-
-    .hero-banner__text-btn a {
-    font-size: 1.25rem;
-}
-
-    .about-customprod {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    margin-top: 4rem;
-    }
-
-    .about-image {
-        grid-column: auto / span 6;
-    }
-
-    .about-image img {
-        aspect-ratio: 1/1;
-        object-fit: cover;
-        width: 100%;
-    }
-
-    .about-text {
-        grid-column: auto / span 6;
-        background-color: var(--green);
-    }
-
-    .customprod-text {
-        grid-column: auto / span 6;
-        background-color: var(--orange);
-    }
-
-    .customprod-image {
-        grid-column: auto / span 6
-    }
-
-    .customprod-image img {
-        aspect-ratio: 1/1;
-        object-fit: cover;
-        width: 100%;
-    }
-
-    .gallery-container {
-        padding: 1rem;
-        column-count: 3;
-    }
-
-    .gallery-container img {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-}
