@@ -5,6 +5,10 @@
     --gap: 1rem;
     --bold: 700;
     --semi-bold: 700;
+    --orange: #EEB17D;
+    --green: #A8B7AB;
+    --yellow-orange: #ffedd5;
+    --soft-yellow: #F6E27F;
 }
 
 body {
@@ -57,7 +61,14 @@ body {
     color: var(--blue);
     font-weight: var(--bold);
     font-size: 1.25rem;
+    transition: 0.3s;
+}
 
+.site-header__menu a:hover {
+    background-color: var(--green);
+    color: white;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
 }
 
 
