@@ -1,30 +1,171 @@
 
 
-
-/* header-nav style */
-
-/* Note from Fariha: "I've just done a basic style to get started, this is not the final version*/
-
-/* Note2 from Fariha: The mobile screen would need less items on the header nav and a hamburger menu. If someone already knows how to do that, have at it. Otherwise, I'll figure it out */
-
-.header-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1rem;
-    background-color: white;
+:root {
+    --sans-serif: 'Open Sans', sans-serif;
+    --gap: 1rem;
+    --bold: 700;
+    --semi-bold: 700;
+    --orange: #EEB17D;
+    --green: #A8B7AB;
+    --yellow-orange: #ffedd5;
+    --soft-yellow: #F6E27F;
+    --deep-brown: #251605;
 }
 
-.header-nav__menu ul {
-    display: flex;
-    list-style: none;
-    gap: 0.5rem;
-}
-
-.header-nav__menu a {
-    text-decoration: none;
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--yellow-orange);
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .container {
-    margin: 2rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap);
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* Header */
+.site-header {
+    padding: 1rem 0;
+}
+
+.site-header div.flex {
+    align-items: center;
+}
+
+.site-header__logo img {
+    width: 3.125rem;
+}
+
+.site-header__menu {
+    flex-grow: 1;       
+}
+
+.site-header__menu ul {
+    justify-content: end;
+    list-style: none;
+}
+
+.site-header__menu a {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: var(--bold);
+    font-size: 1.25rem;
+    transition: 0.3s;
+}
+
+.site-header__menu a:hover {
+    background-color: var(--green);
+    color: white;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+/*--FOOTER--*/
+
+footer {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    padding: 60px 0;
+    }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap; /* allows items to drop to next line if needed */
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-logo {
+  padding: 10px 0;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    height: auto;
+    opacity: 0;
+    transform: translateY(2px);
+    animation: logoFadeIn 0.6s ease forwards;
+    animation-delay: 0.2s;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+.footer-logo img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+@keyframes logoFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale (1);
+  }
+}
+
+
+.footer-socials a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links div {
+    flex: 1;
+    min-width: 150px;
+}
+
+.footer-links h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-links p,
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer-socials a {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
 }
