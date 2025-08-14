@@ -31,6 +31,8 @@ h4 {font-size: 1.25rem;}
     background-position: center;
     display: flex;
     align-items: center;
+    gap: 2rem;
+    animation: fadeSlideUp 0.6s ease forwards
     /* padding-left: 3rem; */
 }
 
@@ -49,7 +51,7 @@ h4 {font-size: 1.25rem;}
 
 .hero-banner__text p {
     color: white;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 .hero-banner__text-btn {
@@ -68,6 +70,21 @@ h4 {font-size: 1.25rem;}
 
 .hero-banner__text-btn:hover {
     background-color: black;
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeSlideUp 1s ease forwards;
 }
 
 
@@ -182,6 +199,7 @@ h4 {font-size: 1.25rem;}
     align-items: center;
     text-align: center;
     padding: 1.75rem;
+    gap: 1rem;
 }
 
 .about-button {
@@ -196,6 +214,12 @@ h4 {font-size: 1.25rem;}
     border-radius: 2rem;
     text-decoration: none;
     font-weight: 600;
+    transition: 0.3s;
+}
+
+.about-button a:hover {
+    background-color: black;
+    color: white;
 }
 
 .customprod-text {
@@ -208,6 +232,7 @@ h4 {font-size: 1.25rem;}
     align-items: center;
     text-align: center;
     padding: 1.75rem;
+    gap: 1rem;
 }
 
 .customprod-button {
@@ -222,6 +247,12 @@ h4 {font-size: 1.25rem;}
     border-radius: 2rem;
     text-decoration: none;
     font-weight: 600;
+    transition: 0.3s;
+}
+
+.customprod-button a:hover {
+    background-color: black;
+    color: white;
 }
 
 .customprod-image {
@@ -252,11 +283,18 @@ h4 {font-size: 1.25rem;}
     margin-bottom: 1rem;
     border: 1px solid black;
     border-radius: 0.75rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: translateY(-4px);
+    transition: transform 0.2s ease;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
 }
 
 .gallery-button {
     text-align: center;
-    margin-bottom: 1rem;
+    margin: 2rem auto;
 }
 
 .gallery-button a {
@@ -267,6 +305,12 @@ h4 {font-size: 1.25rem;}
     border-radius: 2rem;
     text-decoration: none;
     font-weight: 600;
+    transition: 0.3s;
+}
+
+.gallery-button a:hover {
+    background-color: black;
+    color: white;
 }
 
 @media screen and (min-width: 768px) {
@@ -308,6 +352,11 @@ h4 {font-size: 1.25rem;}
 
 @media screen and (min-width: 1200px) {
 
+    .hero-banner__text h2 {
+        font-size: 8rem;
+
+    }
+    
     .featured-content__card {
         grid-column: auto / span 3;
     }
