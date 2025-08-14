@@ -68,18 +68,21 @@
                 
                 <div class="quantity-selector">
                    
-                    <button>- </button>
-                    <span>1</span>
-                    <button>+</button>
+                    <button onclick="changeQuantity(-1)">-</button>
+                    <span id="quantity">1</span>
+                    <button onclick="changeQuantity(1)">+</button>
+                    <script>
+                        function changeQuantity(delta) {
+                            const quantitySpan = document.getElementById('quantity');
+                            let qty = parseInt(quantitySpan.textContent, 10);
+                            qty = Math.max(1, qty + delta);
+                            quantitySpan.textContent = qty;
+                        }
+                    </script>
                 </div>
-
-                <button class="add-to-cart-btn">Add To Cart</button>
+            <button class="add-to-cart-btn">Add To Cart</button>
                 
-                <div class="wishlist-compare">
-                    <button class="wishlist-btn">♡ Add to Wishlist</button>
-                    <button class="compare-btn">⇄ Compare</button>
-                </div>
-
+            
                 <div class="accordion">
                     <div class="accordion-item">
                         <div class="accordion-header">
@@ -123,28 +126,53 @@
         </section>
     </div>
 
+    <script>
+      document.querySelectorAll('.accordion-header').forEach(header => {
+        header.addEventListener('click', function() {
+          const content = this.nextElementSibling;
+          const toggle = this.querySelector('.accordion-toggle');
+          if (content.style.display === 'none' || content.style.display === '') {
+            content.style.display = 'block';
+            if (toggle) toggle.textContent = '-';
+          } else {
+            content.style.display = 'none';
+            if (toggle) toggle.textContent = '+';
+          }
+        });
+      });
+    </script>
+
      <section class="you-may-also-like">
         <div class="container">
             <h2>You May Also Like</h2>
             <div class="also-like-items">
                 <div class="also-like-item">
-                    <img src="Images/cat.jpeg" alt="Cups">
+                    <img src="images/prod-cat-jewelleryholder.jpg" alt="Cups">
+                    
                     <h3>Cat Jewellery Holder</h3>
                     <p>$15</p>
                     <p class="description">A cute ceramic cat to hold your jewellery.</p>
                 </div>
                 <div class="also-like-item">
-                    <img src="http://googleusercontent.com/file_content/0" alt="Noko Buddies">
-                    <h3>Noko Buddies</h3>
-                    <p>$35</p>
+                    <img src="images/prod-frog-jewelleryholder.jpg" alt="Frog Trinket Dish">
+                    <h3>Frog Trinket Dish</h3>
+                    <p>$18</p>
+                    <p class="description">A frog-shaped dish for your small items.</p>
+                </div>
+
+                <div class="also-like-item">
+                    <img src="images/flower_mug.jpeg" alt="flower_mug">
+                    <h3> Flower mug </h3>
+                    <p>$12</p>
+                    <p class="description">A beautiful flower mug for your morning coffee.</p>
                 </div>
                 <div class="also-like-item">
-                    <img src="http://googleusercontent.com/file_content/0" alt="Plates">
-                    <h3>Plates</h3>
-                    <p>$10</p>
+                    <img src="images/prod-cactuspot.jpg" alt="Cactus Pot Set">
+                    <h3>Cactus Pot Set</h3>
+                    <p>$25</p>
+                    <p class="description">A set of cute cactus pots for your plants.</p>
                 </div>
-            </div>
-        </div>
+
     </section>
 
 <footer>
