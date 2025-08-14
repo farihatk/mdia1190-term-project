@@ -75,7 +75,7 @@ body {
 /*--FOOTER--*/
 
 footer {
-    background-color: var(--deep-brown);
+    background-color: rgb(34, 34, 34);
     color: white;
     padding: 60px 0;
     }

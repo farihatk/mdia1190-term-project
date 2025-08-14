@@ -58,11 +58,12 @@ body {
 
 .btn-soft-yellow {
     background-color: var(--soft-yellow);
-    color: var(--deep-brown);
+    color: #251605;
     border: 2px solid var(--deep-brown);
     border-radius: 9999px; /* makes it a pill */
     padding: 0.5rem 1rem;  /* roughly px-4 py-2 */
     font-weight: 600;     /* semi-bold */
+    text-align: center;
     font-size: 0.875rem;  /* text-sm */
     cursor: pointer;      /* nice pointer on hover */
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
