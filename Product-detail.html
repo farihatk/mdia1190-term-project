@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noko - Shop</title>
+  <title>Noko - Cute Dumpling</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/Product-detail.css">
   <link rel="stylesheet" href="css/global.css">
@@ -31,33 +31,48 @@
     </div>
   </header>
 
-   <div class="product-title">
-            <h2>Product Details</h2>
-        </div>
-<div class="breadcrumbs">
-            <a href="#"> Decor Art</a> / <a href="#"> Canvas</a>
-        </div>
+<main>
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="#">Home</a> / <a href="#">Shop</a> / <a href="#">Cute Dumpling</a>
+      </div>
+    </div>
+
+
         <section class="product-section">
-            <div class="product-images">
-                <div class="thumbnail-images">
-                    <img src="Images/WhatsApp Image 2025-08-04 at 1.09.03 PM-2.jpeg" alt= "Main Product Image">
-                    <img src="images/prod-dumpling.jpg" alt="Thumbnail 2">
-                </div>
-                <div class="main-image">
-                    <img src="Images/WhatsApp Image 2025-08-04 at 1.09.03 PM.jpeg" alt="Main Product Image">
-                </div>
-            </div>
+        <div class="product-images">
+        <div class="thumbnail-images">
+        <img src="Images/WhatsApp Image 2025-08-04 at 1.09.03 PM-2.jpeg" alt= "cute dumpling-side view">
+<img src="images/prod-dumpling.jpg" alt="Thumbnail 2">
+</div>
+<div class="main-image">
+<img src="Images/WhatsApp Image 2025-08-04 at 1.09.03 PM.jpeg" alt="Main Product Image">
+</div>
+
+
+
             <div class="product-details">
                 <h1>Cute Dumpling- Handmade Pottery</h1>
                 <p>Cute handmade ceramic dumpling to enlighten your day</p>
+                
                 <div class="rating">
-                    ☆☆☆☆☆
-                    <span class="highlighted">4.8</span> (120 reviews)
+              <div class="stars" aria-label="4.8 out of 5 stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                 </div>
+
+                    <span class="highlighted">4.8</span> 
+                    <span class="reviews">(120 reviews)</span>
                 </div>
+                
                 <div class="price">
                     $22 CAD
                 </div>
-<div class="option-group">
+
+                <div class="option-group">
                     <label for="size">Size</label>
                     <select id="size" class="size-select">
                         <option value="small">Small</option>
@@ -67,19 +82,12 @@
                 </div>
                 
                 <div class="quantity-selector">
+              <button onclick="changeQuantity(-1)" aria-label="Decrease quantity">-</button>
+              <span id="quantity">1</span>
+              <button onclick="changeQuantity(1)" aria-label="Increase quantity">+</button>
+          </div>
                    
-                    <button onclick="changeQuantity(-1)">-</button>
-                    <span id="quantity">1</span>
-                    <button onclick="changeQuantity(1)">+</button>
-                    <script>
-                        function changeQuantity(delta) {
-                            const quantitySpan = document.getElementById('quantity');
-                            let qty = parseInt(quantitySpan.textContent, 10);
-                            qty = Math.max(1, qty + delta);
-                            quantitySpan.textContent = qty;
-                        }
-                    </script>
-                </div>
+        
             <button class="add-to-cart-btn">Add To Cart</button>
                 
             
@@ -109,7 +117,8 @@
                             </p>
                         </div>
                     </div>
-<div class="accordion-item">
+
+                <div class="accordion-item">
                         <div class="accordion-header">
                             <span>Care</span>
                             <span class="accordion-toggle">+</span>
@@ -212,5 +221,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    // Quantity selector script
+    function changeQuantity(delta) {
+        const quantitySpan = document.getElementById('quantity');
+        let qty = parseInt(quantitySpan.textContent, 10);
+        qty = Math.max(1, qty + delta);
+        quantitySpan.textContent = qty;
+    }
+
+    // Accordion script
+    document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', function() {
+        const accordionItem = this.parentElement;
+        const content = this.nextElementSibling;
+        const toggle = this.querySelector('.accordion-toggle');
+
+        // Toggle the active class
+        accordionItem.classList.toggle('active');
+
+        // Animate the content
+        if (accordionItem.classList.contains('active')) {
+          content.style.maxHeight = content.scrollHeight + 'px';
+          if (toggle) toggle.textContent = '-';
+        } else {
+          content.style.maxHeight = '0';
+          if (toggle) toggle.textContent = '+';
+        }
+      });
+    });
+    </script>
 </body>
 </html>
