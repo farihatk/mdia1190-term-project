@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Noko - Shop</title>
+  <!-- I used tailwindcss and a stylesheet -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/products.css">
+  <!-- Google Font link is here -->
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
 </head>
 
@@ -46,11 +48,17 @@
         
     <!-- Filter Bar -->
     <div class="bg-white py-4 px-4 border-b border-t border-neutral-600">
-        <div class="max-w-7xl mx-auto flex space-x-6 text-neutral-700 font-medium">
-            <button class="hover:underline after:font-semibold">All</button>
-            <button class="hover:underline after:font-semibold">Dinnerware</button>
-            <button class="hover:underline after:font-semibold">Sets</button>
-            <button class="hover:underline after:font-semibold">Decor Art</button>
+      
+       <!-- Groups related controls together so screen readers announce them as a set. I've labelled the role and aria label for screen readers. In this case, the aria-pressed is "true" because when the user opens the tab, the filter is pressed on "All". We didn't review aria-pressed in class but I looked it up. I used buttons here and not <a> because the buttons are actions that happen on the current page. Another note here, there is not a visible "after" state because these buttons don't actually work. If they did though, they would be slightly bolded. -->
+        <div class="max-w-7xl mx-auto flex space-x-6 text-neutral-700 font-medium" role="group" aria-label="Product category filters" >
+            
+            <button type="button" aria-pressed="true" class="hover:underline after:font-semibold">All</button>
+            
+            <button type="button" aria-pressed="false" class="hover:underline after:font-semibold">Dinnerware</button>
+            
+            <button type="button" aria-pressed="false" class="hover:underline after:font-semibold">Sets</button>
+            
+            <button type="button" aria-pressed="false" class="hover:underline after:font-semibold">Decor Art</button>
         </div>
     </div>
 
