@@ -8,3 +8,5 @@ Description: A pottery and air-dry clay shop and studio. We make cute and wholes
 Team:
 Andrena Yacoub, Fariha Khan, Rachel Yaholnitsky
 
+<!-- Small change for last commit -->
+
