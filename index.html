@@ -15,17 +15,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Site-Header Navigation -->
     <header class="site-header">
         <div class="container">
             <div class="flex">
                 <div class="site-header__logo">
-                    <a href="index.html">
-                        <img src="images/Noko.svg"  alt="Noko Log" srcset="">
+                    <a href="index.html" aria-label="go to Noko home page">
+                        <img src="images/Noko.svg"  alt="Business logo- Noko written in black and styled font." srcset="">
                     </a>
                 </div>
-                <nav class="site-header__menu">
+                <nav class="site-header__menu" aria-label="header navigation">
                     <ul class="flex">
-                        <li><a href="products.html">Products</a></li>
+                        <li><a href="products.html" aria-label="view Noko products">Products</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
@@ -35,44 +36,46 @@
     </header>
 
     <main>
+        <!-- Hero-Banner Section -->
         <section class="hero-banner">
             <div class="container">
                 <div class="hero-banner__text fade-in-up">
                     <h2>Noko</h2> 
                     <p>Hand-shaped to warm your home and heart.</p>
                     <div class="hero-banner__text-btn">
-                        <a href="products.html">Shop Nokos</a>
+                        <a href="products.html" aria-label="shop Noko products">Shop Nokos</a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Featured Products Section -->
         <section class="featured">
             <div class="container">
                 <div class="featured-content">
                     <h3>Featured Products</h3>
-                    <a href="Product-detail.html" class="featured-content__card">
-                        <img src="images/prod-catinacup.jpg">
+                    <a href="Product-detail.html" class="featured-content__card" aria-label="view details for Cat in a Mug">
+                        <img src="images/prod-catinacup.jpg" alt="a beige cup with a black cat peeking out of it.">
                         <h4>Cat in a Mug</h4>
                         <p class="prod-summary">We love cats here.</p>
                         <p class="prod-price">$17.00</p>
                     </a>
-                    <a href="Product-detail.html" class="featured-content__card">
-                        <img src="images//prod-frog-jewelleryholder.jpg">
+                    <a href="Product-detail.html" class="featured-content__card" aria-label="view details for Frog Trinket Dish">
+                        <img src="images//prod-frog-jewelleryholder.jpg" alt="a lotus leaf shaped green dish with a small frog on the left made for jewelleries.">
                         <h4>Frog Trinket Dish</h4>
                         <p class="prod-summary">Looks like a pacman leaf.</p>
                         <p class="prod-price">$18.00</p>
                     </a>
-                    <a href="Product-detail.html" class="featured-content__card">
-                        <img src="images/prod-dumpling.jpg">
+                    <a href="Product-detail.html" class="featured-content__card" aria-label="view details for Cute Dumpling Set">
+                        <img src="images/prod-dumpling.jpg" alt="three dumpling shaped clay figurines with smiley faces">
                         <h4>Cute Dumpling Set</h4>
-                        <p class="prod-summary">We love cats here.</p>
+                        <p class="prod-summary">Did somebody say Dim Sum?</p>
                         <p class="prod-price">$22.00</p>
                     </a>
-                    <a href="Product-detail.html" class="featured-content__card">
-                        <img src="images/prod-cactuspot.jpg">
+                    <a href="Product-detail.html" class="featured-content__card" aria-label="view details for Cactus Plant Pot Set">
+                        <img src="images/prod-cactuspot.jpg" alt="a set of plant pots designed as a cactus with a smiley face.">
                         <h4>Cactus Plant Pot Set</h4>
-                        <p class="prod-summary">We love cats here.</p>
+                        <p class="prod-summary">Why buy one when you can have two!</p>
                         <p class="prod-price">$25.00</p>
                     </a>
                     <div class= "allprods-button">
@@ -82,56 +85,59 @@
             </div>
         </section>
 
+        <!-- About and Custom Products Info -->
         <section class="about-customprod">
             <div class="about-image">
-                <img src="images/cat-jar.jpg">
+                <img src="images/cat-jar.jpg" alt="a cat-shaped jar with the lid being the cat's head.">
             </div>
             <div class="about-text">
                 <h3>Who is Noko?</h3>
                 <p>Noko is your partner, your support system, and your best friend. We turn humble clay into little pieces of joy. Each creation hand-shaped with love, blending soft forms and gentle colors to brighten your space. We believe every object should feel as good as it looks — charming, thoughtful, and made to last. From tiny treasures to statement pieces, our work is here to make your everyday a little more special.</p>
                 <div class= "about-button">
-                    <a href="#">Read Our Story</a>
+                    <a href="#" aria-label="read the Noko story">Read Our Story</a>
                 </div>
             </div>
             <div class="customprod-text">
                 <h3>Make your own Noko</h3>
                 <p>At Noko, we love bringing your ideas to life. Our custom creations are made just for you — whether it’s a special gift, a unique home piece, or something you’ve been dreaming of for years. We work closely with you to shape every detail, blending our craft with your vision. Each piece becomes a little story you can hold in your hands.</p>
                 <div class= "customprod-button">
-                    <a href="#">Explore Custom Noko</a>
+                    <a href="#" aria-label="explore custom Noko options">Explore Custom Noko</a>
                 </div>
             </div>
-            <div class="customprod-image">
+            <div class="customprod-image" alt="a collection of painted bowls such as strawberry, carrot or turnip patterned.">
                 <img src="images/custom-bowls.jpg">
             </div>
         </section>
 
+        <!-- Masonary Gallery for Products -->
         <section class="prod-gallery">
             <h3>Shop</h3>
-            <div class="gallery-container">
-                <div><img src="images/prod-beecup.jpg"></div>
-                <div><img src="images/prod-catplate-black.jpg"></div>
-                <div><img src="images/prod-dumpling.jpg"></div>
-                <div><img src="images/prod-catinacup.jpg"></div>
-                <div><img src="images/prod-cactuspot.jpg"></div>
-                <div><img src="images/prod-mushroompot.jpg"></div>
-                <div><img src="images/prod-dumpling.jpg"></div>
-                <div><img src="images/prod-frog-jewelleryholder.jpg"></div>
-                <div><img src="images/prod-sunbowl.jpg"></div>
+            <div class="gallery-container" aria-label="product gallery">
+                <div><img src="images/prod-beecup.jpg" alt="a white mug with yellow handles and small bees painted on it."></div>
+                <div><img src="images/prod-catplate-black.jpg" alt="a beige plate with a black cat wearing a pink scarf with tulop flowers around painted on it."></div>
+                <div><img src="images/prod-dumpling.jpg" alt="three dumpling shaped clay figurines with smiley faces."></div>
+                <div><img src="images/prod-catinacup.jpg" alt="a beige cup with a black cat peeking out of it."></div>
+                <div><img src="images/prod-cactuspot.jpg" alt="a set of plant pots designed as a cactus witha smiley face."></div>
+                <div><img src="images/prod-mushroompot.jpg" alt="a mushroom-shaped plant pot with dried flowers sticking out."></div>
+                <div><img src="images/prod-duckvase.jpg" alt="a vase with a duck beak, legs and eyes."></div>
+                <div><img src="images/prod-frog-jewelleryholder.jpg" alt="a lotus leaf shaped green dish with a small frog on the left made for jewelleries."></div>
+                <div><img src="images/prod-sunbowl.jpg" alt="a green bowl with a sunflower painted inside of it."></div>
             </div>
             <div class="gallery-button">
-                    <a href="#">Shop All</a>
+                    <a href="products.html" aria-label="shop all Noko products">Shop All</a>
                 </div>
         </section>
     </main>
 </body>
 
+<!-- Site Footer and Footer Navigation -->
 <footer>
         <div class="container footer-content">
             <div class="footer-left">
                 <div class="footer-logo">
                     <h1>Noko</h1>
                 </div>
-                <div class="footer-socials">
+                <div class="footer-socials" aria-label="social media links">
                     <a href="#">Instagram</a>
                     <a href="#">Pinterest</a>
                     <a href="#">Twitter</a>
