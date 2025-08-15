@@ -11,7 +11,7 @@
     --bold: 700;
     --semi-bold: 700;
 }
-
+/* Global Styles */
 body {
   font-family: 'DM Sans', sans-serif;
   background-color: var(--yellow-orange);
@@ -19,14 +19,14 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
-
+/* Container */
 .container {
     max-width: 80rem;
     margin: 0 auto;
     padding: 0 1rem;
     width: 100%;
 }
-
+/* Flexbox Utilities */
 .flex {
     display: flex;
     gap: var(--gap);
@@ -69,7 +69,7 @@ body {
 }
 
 
-       
+  /* Breadcrumbs : Under the logo */     
 .breadcrumbs {
             margin: 1rem 0;
     font-size: 0.9rem;
@@ -144,7 +144,7 @@ body {
             color: #555;
             margin-bottom: 1rem;
         }
-        
+        /* Rating and Price */
         .rating {
             display: flex;
            align-items: center;
@@ -161,7 +161,7 @@ body {
             font-weight: var(--bold);
             color: #000;
         }
-
+/* Options and Selectors */
         .option-group {
             margin-bottom: 20px;
         }
@@ -171,7 +171,7 @@ body {
             font-weight: 600;
             margin-bottom: 5px;
         }
-
+/* Size Selector */
         .size-select {
             width: 100%;
             padding: 10px;
@@ -180,6 +180,7 @@ body {
             background-color: #fff;
         }
 
+        /* Quantity Selector */
         .quantity-selector {
             display: flex;
             align-items: center;
@@ -203,21 +204,11 @@ body {
             border-right: 1px solid #dcdcdc;
         }
         
-        .add-to-cart-btn {
-            background-color: rgb(255, 255, 101);
-            color: #000000;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            width: 100%;
-            font-size: 1rem;
-            cursor: pointer;
-            margin-bottom: 10px;
-        }
+    
         
-        
+        /* Accordion Section ; Under the information sheet */
         .accordion-item {
-            border-bottom: 1px solid #dcdcdc;
+            border-bottom: 1px solid #f6f3f3;
             padding: 15px 0;
         }
 
@@ -321,7 +312,7 @@ body {
             font-size: 1.5rem;
         }
         
-/*add to cart button */
+/*add to cart button  and animation*/
         .add-to-cart-btn {
     background-color: #F6E27F;
     color: #fff;
