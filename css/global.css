@@ -1,5 +1,5 @@
 
-
+/* to help us access the site colors and typography easily */
 :root {
     --sans-serif: 'Open Sans', sans-serif;
     --gap: 1rem;
@@ -16,7 +16,7 @@ body {
   font-family: 'DM Sans', sans-serif;
   background-color: var(--yellow-orange);
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow-x: hidden; /*helps to stop horizontal scrolling*/
 }
 
 .container {

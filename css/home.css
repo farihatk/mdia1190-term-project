@@ -9,7 +9,7 @@ html, body {
     overflow-x: hidden;
 }
 
-
+/* Mobile */
 .container {
     max-width: 80rem;
     margin: 0 auto;
@@ -17,6 +17,7 @@ html, body {
     width: 100%;
 }
 
+/* typography */
 h3 { font-size: 1.5rem;}
 h4 {font-size: 1.25rem;}
 
@@ -29,15 +30,14 @@ h4 {font-size: 1.25rem;}
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    display: flex;
+    display: flex; /*to make sure hero text is aligned center-left*/
     align-items: center;
     gap: 2rem;
-    animation: fadeSlideUp 0.6s ease forwards
-    /* padding-left: 3rem; */
+    animation: fadeSlideUp 0.6s ease forwards; /*connects animation to keyframe for a fade-up effect*/
 }
 
 .hero-banner__text {
-    position: static;
+    position: static; /*to make sure text is static on background image on different screen sizes*/
     top: 3rem;
     left: 1.5rem;
 }
@@ -56,7 +56,7 @@ h4 {font-size: 1.25rem;}
 
 .hero-banner__text-btn {
     background-color: var(--green);
-    display: inline-block;
+    display: inline-block; /* to make sure the background covers the area of the text only and box can be modified*/
     padding: 0.5rem 0.5rem;
     border-radius: 2rem;
     transition: 0.3s;
@@ -75,16 +75,16 @@ h4 {font-size: 1.25rem;}
 @keyframes fadeSlideUp {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(20px); /*start of fade animation from 20px off the screen*/
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0); /*end of fade animation back to element's original position*/
   }
 }
 
 .fade-in-up {
-  animation: fadeSlideUp 1s ease forwards;
+  animation: fadeSlideUp 1s ease forwards; /*determining and naming the animation*/
 }
 
 
@@ -111,7 +111,7 @@ h4 {font-size: 1.25rem;}
     border-radius: 1rem;
     text-decoration: none;
     color: inherit;
-    display: block;
+    display: block; /*to make the anchor tag act as a block element*/
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
@@ -174,7 +174,7 @@ h4 {font-size: 1.25rem;}
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     margin-top: 4rem;
-    align-items: stretch;
+    align-items: stretch; /*to fill the whole space of each grid items container to its full space*/
 }
 
 .about-image {
@@ -194,7 +194,7 @@ h4 {font-size: 1.25rem;}
     /* padding: 1.75rem 1.75rem; */
     aspect-ratio: 1/1;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*to keep the alignment and spacing of texts consistent*/
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -264,9 +264,10 @@ h4 {font-size: 1.25rem;}
     object-fit: cover;
     width: 100%;
     height: 100%;
-    
 }
 
+
+/* Masonary gallery section */
 .prod-gallery h3 {
     text-align: center;
     padding-top: 1rem;
@@ -275,7 +276,7 @@ h4 {font-size: 1.25rem;}
 
 .gallery-container {
     padding: 1rem;
-    column-count: 1;
+    column-count: 1; /*determines the number of columns on which the images are shown*/
 }
 
 .gallery-container img {
@@ -313,8 +314,11 @@ h4 {font-size: 1.25rem;}
     color: white;
 }
 
+/* Tablet */
+
 @media screen and (min-width: 768px) {
 
+    /* Hero section - to resize the content to look bigger on a bigger screen */
     .hero-banner__text h2 {
         font-size: 4rem;
         letter-spacing: 0.5rem;
@@ -328,6 +332,8 @@ h4 {font-size: 1.25rem;}
         font-size: 1rem;
         font-weight: 800;
     }
+
+    /* About/Custom product section - to change from stacking on mobile to align side by side like a 4 item square grid */
 
     .about-image {
         grid-column: auto / span 6;
@@ -345,21 +351,30 @@ h4 {font-size: 1.25rem;}
         grid-column: auto /span 6;
     }
 
+    /* gallery - to change from stacking on mobile to showing 2 columns of images on a larger screen */
+
     .gallery-container {
         column-count: 2;
     }
 }
 
+/* Desktop */
+
 @media screen and (min-width: 1200px) {
+
+    /* hero banner section - to make the text Noko larger on desktop screen */
 
     .hero-banner__text h2 {
         font-size: 8rem;
-
     }
     
+    /* featued products section - to change from 2 by 2 grid stacking on mobile and tablet to stacking all 4 on one line on desktop */
+
     .featured-content__card {
         grid-column: auto / span 3;
     }
+
+    /*to change from 2 to 3 columns of images on desktop*/
 
     .gallery-container {
         column-count: 3;
