@@ -31,19 +31,22 @@
     </div>
   </header>
 
+ 
 <main>
-    <div class="container">
-      <div class="breadcrumbs">
-        <a href="#">Home</a> / <a href="#">Shop</a> / <a href="#">Cute Dumpling</a>
-      </div>
-    </div>
+    <nav class="breadcrumbs" aria-label="Breadcrumb navigation">
+    <a href="/" aria-label="Go to homepage">Home</a>
+    <span aria-hidden="true">></span>
+    <a href="/products.html" aria-label="View all Products">Products</a>
+    <span aria-hidden="true">></span>
+    <span aria-current="page">Decor art</span>
+</nav>
 
 
         <section class="product-section">
         <div class="product-images">
         <div class="thumbnail-images">
         <img src="Images/WhatsApp Image 2025-08-04 at 1.09.03 PM-2.jpeg" alt= "cute dumpling-side view">
-<img src="images/prod-dumpling.jpg" alt="Thumbnail 2">
+<img src="images/prod-dumpling.jpg" alt="Dumpling with other dumplings">
 </div>
 <div class="main-image">
 <img src="Images/WhatsApp Image 2025-08-04 at 1.09.03 PM.jpeg" alt="Main Product Image">
@@ -81,14 +84,17 @@
                     </select>
                 </div>
                 
-                <div class="quantity-selector">
-              <button onclick="changeQuantity(-1)" aria-label="Decrease quantity">-</button>
-              <span id="quantity">1</span>
-              <button onclick="changeQuantity(1)" aria-label="Increase quantity">+</button>
-          </div>
+                <div class="quantity-selector" aria-label="Product quantity selector">
+    <button aria-label="Decrease quantity">-</button>
+    <span aria-label="Selected quantity">1</span>
+    <button aria-label="Increase quantity">+</button>
+</div>
                    
         
-            <button class="add-to-cart-btn">Add To Cart</button>
+            <button class="add-to-cart-btn">Add To Cart</button> 
+            <aria-label="Add Cute Dumpling to cart">
+            </button>
+          
                 
             
                 <div class="accordion">
